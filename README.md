@@ -1,1 +1,1 @@
-# LLaVA-Reasoner
+# LLaVA-Reasoner-DPO
