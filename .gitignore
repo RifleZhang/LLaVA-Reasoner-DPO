@@ -1,0 +1,59 @@
+setup/set_path_secret.sh
+setup/set_path_llavahound.sh
+setup/interactive_node_setup.sh
+setup/node_setup.sh
+setup/paths.sh
+setup/backup
+.viminfo
+dpo/scripts_multinode/config.sh
+ssh_rsa
+notebook/figs
+.bash_history
+.nv/
+.keras/
+.triton/
+.cache/
+.ipython/
+.jupyter/
+.local/
+xcomposer_exp/**/*.json
+*/model_zoo
+__pycache__/
+llama_vid/work_dirs
+dpo_experiment/trl_git
+*/nohup.out
+*/.locks
+dpo_experiment/transformers
+*.pt
+*/cache
+*.ttf
+*/cache_dir
+# Python
+video_llava/llava/serve
+__pycache__
+*.pyc
+*.egg-info
+dist
+**/.ipynb_checkpoints
+video_llava/cache
+video_llava/cache_dir
+
+# Log
+*.log
+*.log.*
+
+# Data
+!**/alpaca-data-conversation.json
+
+# Editor
+.idea
+*.swp
+
+# Other
+.DS_Store
+wandb
+output
+
+cc3m
+checkpoints
+ckpts*
