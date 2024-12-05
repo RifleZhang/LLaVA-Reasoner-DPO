@@ -7,7 +7,7 @@ This is an unofficial repo for the paper:
 
 ## setup
 ```
-# setup environment
+# setup environment, need to fill in the required fields
 source setup/setup_env.sh
 
 # data
@@ -16,6 +16,7 @@ source setup/setup_train_data.sh
 
 ## sft
 ```
+cd llava_reasoner
 bash scripts_sft/sft_direct+cot_preview.sh \
 $SAVE_DIR/sft/llava_reasoner_sft_preview
 ```
