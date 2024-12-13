@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=40.6.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "LLaVA-Reasoner-DPO"
+version = "0.1.0"
+description = "A Python project that includes the vlm package"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.7"
+
+[tool.setuptools]
+packages = ["data_processing", "llava_reasoner"]  
+
+[project.optional-dependencies]
+notebook = [
+    "ipywidgets",
+    "jinja2",
+    "jupyterlab",  # ==4.2.3
+]
