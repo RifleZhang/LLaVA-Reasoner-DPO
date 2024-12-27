@@ -8,8 +8,16 @@ This is an unofficial repo for the paper:
 
 ## Dataset
 [ShareGPT4o-reasoning](https://huggingface.co/datasets/Share4oReasoning/sft_data) 193k cot prediction + filtered direct prediction 
+[ShareGPT4o-reasoning-dpo](https://huggingface.co/datasets/Share4oReasoning/dpo_data) 66k DPO data on 3 domains: aokvqa, math and chartqa
 
 ## Model ckpt
+[Open-LLaVA-NeXT](https://huggingface.co/Share4oReasoning/Open-LLaVA-NeXT-LLaMA3-8B): same as https://github.com/xiaoachen98/Open-LLaVA-NeXT, used as our base model 
+
+[LLaVA-Reasoner-SFT-preview](https://huggingface.co/Share4oReasoning/LLaVA-Reasoner-SFT-preview): SFT with direct + CoT
+
+[LLaVA-Reasoner-SFT](https://huggingface.co/Share4oReasoning/LLaVA-Reasoner-SFT): SFT with direct + CoT (additional math than above)
+
+[LLaVA-Reasoner-DPO-preview](https://huggingface.co/Share4oReasoning/LLaVA-Reasoner-DPO-preview): DPO from SFT-preview
 
 
 ## setup 
