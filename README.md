@@ -25,5 +25,14 @@ source setup/setup_train_data.sh
 ```
 cd llava_reasoner
 bash scripts_sft/sft_direct+cot_preview.sh \
-$SAVE_DIR/sft/llava_reasoner_sft_preview
+$SAVE_DIR/sft/LLaVA-Reasoner-SFT-preview
 ```
+
+## dpo
+```
+cd llava_reasoner
+bash scripts_dpo/dpo_llava_reasoner_preview.sh \
+$SAVE_DIR/dpo/LLaVA-Reasoner-DPO-preview
+```
+
+
