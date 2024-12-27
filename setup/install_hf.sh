@@ -4,4 +4,4 @@ git lfs install
 # huggingface-cli lfs-enable-largefiles .
 
 git config --global credential.helper cache
-python -m pip install huggingface_hub
+sudo pip install huggingface_hub==0.25.0

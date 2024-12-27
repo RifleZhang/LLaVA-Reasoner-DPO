@@ -1,10 +1,8 @@
 model_name=$SAVE_DIR/hf/open-llava-next-llama3-8b
-output_dir=${1:-"$SAVE_DIR/sft/llava_sft_0829_v3"}
+output_dir=${1:-"$SAVE_DIR/sft/LLaVA-Reasoner-SFT-preview"}
 
 sft_dir=$IMAGE_INSTRUCTION_DIR/sft
 pretrain_dir=$IMAGE_INSTRUCTION_DIR/pretrain
-
-ablation_dir=$IMAGE_INSTRUCTION_DIR/sft/ablation
 
 # data composition
 # pretrain 2k mix + direct + cot
@@ -76,7 +74,6 @@ VIT_LR=5e-7
 # continue train doesn't require
 # --pretrain_mm_mlp_adapter checkpoints/llava-v1.6-8b_llama3-8b_pretrain_lcs-558k_ft-mlp-lr-1e-3/mm_projector.bin \
 # --save_only_model True
-# --max_steps 12300
 
 torchrun --nproc_per_node=$n_gpu --master_port=$port llava/train/train_mem.py \
     --deepspeed scripts/zero3.json \

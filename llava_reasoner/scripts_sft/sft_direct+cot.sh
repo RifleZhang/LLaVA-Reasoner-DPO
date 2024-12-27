@@ -1,5 +1,5 @@
 model_name=$SAVE_DIR/hf/open-llava-next-llama3-8b
-output_dir=${1:-"$SAVE_DIR/sft/llava_sft_0829_v3"}
+output_dir=${1:-"$SAVE_DIR/sft/LLaVA-Reasoner-SFT"}
 
 sft_dir=$IMAGE_INSTRUCTION_DIR/sft
 pretrain_dir=$IMAGE_INSTRUCTION_DIR/pretrain

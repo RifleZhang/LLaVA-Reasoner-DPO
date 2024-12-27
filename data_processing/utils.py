@@ -57,9 +57,9 @@ def load_and_cache_image(image_file, bucket_folder=DEFAULT_BUCKET_FOLDER, local_
     if './' in image_file:
         image_file = image_file.replace('./', '')
     local_image_path = os.path.join(local_folder, image_file)
-    bucket_image_path = os.path.join(bucket_folder, image_file)
     try:
         if not os.path.exists(local_image_path):  # Check if image is cached locally
+            bucket_image_path = os.path.join(bucket_folder, image_file)
             # Fetch image from S3 bucket
             obj = S3.get_object(Bucket=BUCKET_NAME, Key=bucket_image_path)
             image_data = obj['Body'].read()
