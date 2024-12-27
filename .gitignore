@@ -1,3 +1,4 @@
+llava_reasoner/scripts_small
 setup/set_path_secret.sh
 setup/set_path_llavahound.sh
 setup/interactive_node_setup.sh
