@@ -1,4 +1,4 @@
-# Unofficial Repo for LLaVA-Reasoner-DPO
+# Vision Language Model Chain-of-thought Reasoning and Reward
 This is an unofficial repo for the paper:
 [**Improve Vision Language Model Chain-of-thought Reasoning**](https://arxiv.org/pdf/2410.16198)
 
