@@ -42,13 +42,15 @@ cd llava_reasoner
 bash scripts_dpo/dpo_llava_reasoner_preview.sh \
 $SAVE_DIR/dpo/LLaVA-Reasoner-DPO-preview
 ```
-##citation
+## citation
+```
 @article{zhang2024improve,
   title={Improve vision language model chain-of-thought reasoning},
   author={Zhang, Ruohong and Zhang, Bowen and Li, Yanghao and Zhang, Haotian and Sun, Zhiqing and Gan, Zhe and Yang, Yinfei and Pang, Ruoming and Yang, Yiming},
   journal={arXiv preprint arXiv:2410.16198},
   year={2024}
 }
+```
 
 ## Acknowledge
 Thanks to 
